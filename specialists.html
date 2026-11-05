@@ -124,57 +124,56 @@
       <div class="spec-soon__card"><span class="spec-soon__tag">Скоро</span><p>По&nbsp;дивертикулярной болезни</p></div>
     </div>
   </section>
-  <section class="wrap section" id="calc">
+  <section class="wrap section section--calc" id="calc">
     <div class="sec-head">
-      <h2 class="h2">Калькулятор клетчатки</h2>
+      <h2 class="h2">Сколько клетчатки вы&nbsp;получаете?</h2>
       <div class="sec-head__side">
-        <p class="lead">Посчитайте, сколько пищевых волокон вы&nbsp;получаете с&nbsp;едой,&nbsp;— результат обновляется сразу</p>
+        <p class="lead">Укажите, сколько порций из&nbsp;каждой группы продуктов вы&nbsp;съедаете в&nbsp;среднем за&nbsp;неделю&nbsp;— передвигайте ползунки. Результат пересчитывается сразу: сколько пищевых волокон (ПВ) вы&nbsp;получаете из&nbsp;питания в&nbsp;неделю и&nbsp;в&nbsp;день и&nbsp;какой это процент от&nbsp;нормы (30&nbsp;г/сутки)</p>
       </div>
     </div>
-    <div class="fcalc" data-fcalc>
-      <div class="fcalc__form">
-        <div class="fcalc__bar">
-          <div class="seg" role="radiogroup" aria-label="Период">
-            <button type="button" role="radio" aria-checked="true" data-per="week">В&nbsp;неделю</button>
-            <button type="button" role="radio" aria-checked="false" data-per="day">В&nbsp;день</button>
-          </div>
-          <div class="seg" role="radiogroup" aria-label="Пол">
-            <button type="button" role="radio" aria-checked="true" data-sex="f">Женщина</button>
-            <button type="button" role="radio" aria-checked="false" data-sex="m">Мужчина</button>
-          </div>
-          <div class="seg" role="radiogroup" aria-label="Возраст">
-            <button type="button" role="radio" aria-checked="true" data-age="young">18–50&nbsp;лет</button>
-            <button type="button" role="radio" aria-checked="false" data-age="old">51+</button>
-          </div>
+    <div class="pcalc" data-pcalc>
+      <div class="pcalc__form">
+        <div class="pcalc__head">
+          <p class="h5">Порций в&nbsp;неделю</p>
+          <button class="pcalc__reset" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.5v4.2h4.2"/></svg>Сбросить</button>
         </div>
-        <div class="fcalc__head"><p class="h5">Ваш рацион <span data-out="per">за&nbsp;неделю</span></p><p>Сколько порций из&nbsp;каждой группы вы&nbsp;съедаете. Под названием&nbsp;— сколько пищевых волокон даёт одна порция.</p></div>
-        <ul class="fcalc__list"></ul>
-        <div class="fcalc__fbx">
-          <img src="images/blog/cta-pack.webp" alt="" width="1400" height="772" loading="lazy">
-          <span class="fcalc__name"><b>1&nbsp;саше Фибраксина в&nbsp;день</b><small>+5,5&nbsp;г пищевых волокон</small></span>
-          <button class="switch fcalc__fbx-sw" type="button" aria-pressed="false" aria-label="Добавить 1 саше Фибраксина в день"><i></i></button>
-        </div>
-        <button class="fcalc__reset" type="button" hidden>Сбросить</button>
+        <ul class="pcalc__list">
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/kasha.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-1"><b>Завтраки, каши</b><small>150&nbsp;мл · 2,85&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-1" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="2.8483300000000003"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/salad.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-2"><b>Салаты овощные</b><small>100–150&nbsp;г · 1,16&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-2" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="1.1643584905660378"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/soup-bowl.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-3"><b>Супы</b><small>250–300&nbsp;мл · 3,59&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-3" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="3.5874791666666663"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/spaghetti.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-4"><b>Гарниры</b><small>овощи, паста, бобовые · 2,32&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-4" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="2.316792452830189"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/apple.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-5"><b>Фрукты свежие</b><small>штука или горсть · 2,88&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-5" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="2.8821509433962267"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/grapes-hazel.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-6"><b>Сухофрукты, орехи</b><small>горсть · 3,06&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-6" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="3.0575769230769225"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/bread.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-7"><b>Хлеб свежий</b><small>кусок · 1,75&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-7" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="1.7496201923076924"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+          <li class="pcalc__row"><span class="pcalc__ico" aria-hidden="true"><img src="images/food/cookie.png" alt="" width="256" height="256" loading="lazy"></span><label class="pcalc__name" for="pc-8"><b>Сухари, сушки, печенье</b><small>горсть · 2,50&nbsp;г&nbsp;волокон</small></label><span class="pcalc__sum">= 0,00&nbsp;г</span><span class="pcalc__range"><input type="range" id="pc-8" min="0" max="28" step="1" value="0" autocomplete="off" data-pv="2.5046341463414636"></span><span class="pcalc__count"><b>0</b> <i>порций</i></span></li>
+        </ul>
       </div>
-      <div class="fcalc__res" aria-live="polite">
-        <div class="fcalc__ring">
-          <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="fcalc__track"/><circle cx="60" cy="60" r="52" class="fcalc__prog"/><circle cx="60" cy="60" r="52" class="fcalc__prog-fbx"/></svg>
-          <div class="fcalc__ring-val"><b data-out="day">0</b><span>г волокон<br>в&nbsp;день</span></div>
+      <div class="pcalc__res">
+        <div class="pcalc__ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="pcalc__track"/><circle cx="60" cy="60" r="52" class="pcalc__prog"/></svg>
+          <div class="pcalc__ring-val"><b data-out="day">0,00</b><span>г волокон в&nbsp;день<br>из&nbsp;30&nbsp;г</span></div>
         </div>
-        <div class="fcalc__stats">
-          <div><span>Норма в&nbsp;день</span><b><i data-out="norm">25</i>&nbsp;г</b></div>
-          <div><span>От&nbsp;нормы</span><b><i data-out="pct">0</i>%</b></div>
-          <div><span>За&nbsp;неделю</span><b><i data-out="week">0</i>&nbsp;г</b></div>
+        <p class="pcalc__verdict" data-out="verdict" aria-live="polite">Укажите количество порций хотя&nbsp;бы по&nbsp;одной группе.</p>
+        <div class="pcalc__stats">
+          <div><span>Итого за&nbsp;неделю</span><b><i data-out="week">0,00</i>&nbsp;г</b></div>
+          <div><span>От&nbsp;нормы</span><b><i data-out="pct">0,00</i>&nbsp;%</b></div>
+          <div><span>Норма в&nbsp;день</span><b>30&nbsp;г</b></div>
         </div>
-        <p class="fcalc__fbx-line" hidden>Из&nbsp;них <b>5,5&nbsp;г</b>&nbsp;— Фибраксин</p>
-        <p class="fcalc__verdict" data-out="verdict">Добавьте хотя&nbsp;бы одну порцию&nbsp;— и&nbsp;мы&nbsp;покажем, сколько пищевых волокон вы&nbsp;получаете.</p>
-        <div class="fcalc__cta" hidden>
-          <a class="btn" href="index.html#buy">Где купить<svg class="btn__arrow" viewBox="0 0 22 14.73" aria-hidden="true"><path d="M21.7 8.07a1 1 0 0 0 0-1.41L15.34.29a1 1 0 1 0-1.41 1.42l5.66 5.65-5.66 5.66a1 1 0 0 0 1.41 1.41zM0 8.36h21v-2H0z" fill="currentColor"/></svg></a>
-          <a class="btn btn--line" href="index.html#howto">Как принимать</a>
-        </div>
-        <p class="fcalc__note">Оценка ориентировочная: состав блюд и&nbsp;размер порций у&nbsp;всех разные. Норма в&nbsp;сутки: женщины&nbsp;— 25&nbsp;г (51+&nbsp;— 21&nbsp;г), мужчины&nbsp;— 38&nbsp;г (51+&nbsp;— 30&nbsp;г).</p>
       </div>
-      <div class="fcalc__sticky" aria-hidden="true"><span class="fcalc__sticky-ring"></span><span><b data-out="day">0</b>&nbsp;г волокон в&nbsp;день · <b data-out="pct">0</b>%</span><span class="fcalc__sticky-go">Итог ↓</span></div>
+      <div class="pcalc__fbx">
+        <img class="pcalc__fbx-pack" src="images/pack-black-shadow.webp" alt="" width="900" height="505" loading="lazy">
+        <div class="pcalc__fbx-head">
+          <p class="pcalc__fbx-k">Чем Фибраксин дополняет рацион</p>
+          <p class="h5">Больше, чем просто клетчатка</p>
+        </div>
+        <ul class="pcalc__fbx-list">
+          <li>Арабиногалактан&nbsp;— полностью растворимое и&nbsp;ферментируемое пищевое волокно, которого очень мало в&nbsp;обычной пище.</li>
+          <li>Фибраксин&nbsp;— двойная поддержка для организма за&nbsp;счёт синергичного действия двух его компонентов.</li>
+        </ul>
+        <p class="pcalc__fbx-note">1&nbsp;саше в&nbsp;день&nbsp;— 5,5&nbsp;г арабиногалактана. В&nbsp;расчёт и&nbsp;на&nbsp;шкалу не&nbsp;входит&nbsp;— калькулятор считает только питание.</p>
+        <a class="btn" href="index.html#buy">Где купить<svg class="btn__arrow" viewBox="0 0 22 14.73" aria-hidden="true"><path d="M21.7 8.07a1 1 0 0 0 0-1.41L15.34.29a1 1 0 1 0-1.41 1.42l5.66 5.65-5.66 5.66a1 1 0 0 0 1.41 1.41zM0 8.36h21v-2H0z" fill="currentColor"/></svg></a>
+      </div>
+      <div class="pcalc__sticky" aria-hidden="true"><span class="pcalc__sticky-ring"></span><span><b data-out="day">0,00</b>&nbsp;г в&nbsp;день · <b data-out="pct">0,00</b>% нормы</span><span class="pcalc__sticky-go">Итог ↓</span></div>
     </div>
   </section>
 </main>
