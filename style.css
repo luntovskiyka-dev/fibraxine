@@ -27,3 +27,4 @@ body:has(.to-top.is-on) .buy-float{right:calc(24px + 56px + 10px);max-width:calc
 }
 html.vplayer-open .to-top{visibility:hidden}
 @media(prefers-reduced-motion:reduce){.to-top{transition:none}}
+.sec-fn{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}@media(max-width:767px){.sec-fn{font-size:13px}}
